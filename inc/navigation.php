@@ -1,7 +1,7 @@
 	<!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="<?php echo ROOT_URL; ?>">Inventory System</a>
+        <a class="font-weight-bold navbar-brand" href="<?php echo ROOT_URL; ?>">INVENTORY MANAGEMENT SYSTEM📊</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -17,10 +17,10 @@
 				<span class="nav-link">Welcome <?php echo $_SESSION['fullName']; ?></span>
             </li>
 			<li class="nav-item">
-				<span class="nav-link"> | </span>
+				<span class="font-weight-bold nav-link"> | </span>
             </li>
 			<li class="nav-item">
-				<a class="nav-link" href="model/login/logout.php">Log Out</a>
+				<a class="nav-link" href="model/login/logout.php">LogOut</a>
             </li>
           </ul>
         </div>

@@ -1,10 +1,5 @@
 $(document).ready(function(){
 	
-	// Listen to register button
-	$('#register').on('click', function(){
-		register();
-	});
-	
 	// Listen to reset password button
 	$('#resetPasswordButton').on('click', function(){
 		resetPassword();
@@ -15,30 +10,6 @@ $(document).ready(function(){
 		login();
 	});
 });
-
-
-// Function to register a new user
-function register(){
-	var registerFullName = $('#registerFullName').val();
-	var registerUsername = $('#registerUsername').val();
-	var registerPassword1 = $('#registerPassword1').val();
-	var registerPassword2 = $('#registerPassword2').val();
-	
-	$.ajax({
-		url: 'model/login/register.php',
-		method: 'POST',
-		data: {
-			registerFullName:registerFullName,
-			registerUsername:registerUsername,
-			registerPassword1:registerPassword1,
-			registerPassword2:registerPassword2,
-		},
-		success: function(data){
-			$('#registerMessage').html(data);
-		}
-	});
-}
-
 
 // Function to reset password
 function resetPassword(){
